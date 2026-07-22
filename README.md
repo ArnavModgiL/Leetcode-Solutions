@@ -189,3 +189,11 @@ I solve LeetCode problems regularly and keep improving my coding skills one prob
 Please consider giving it a ⭐.
 
 Happy Coding! 🚀
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Math
+|  |
+| ------- |
+| [0009-palindrome-number](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0009-palindrome-number) |
+<!---LeetCode Topics End-->
