@@ -4,31 +4,29 @@ class Solution {
         String row2 = "asdfghjkl";
         String row3 = "zxcvbnm";
 
-        List <String> ans = new ArrayList<>();
+        List<String> ans = new ArrayList<>();
 
         for(int i = 0; i < words.length; i++) {
             String word = words[i];
-            String Lower = word.toLowerCase();
+            String lower = word.toLowerCase();
             String row = "";
 
-            if(row1.contains("" + Lower.charAt(0))) {
+            if(row1.contains("" + lower.charAt(0))) {
                 row = row1;
-            } else if(row2.contains("" + Lower.charAt(0))) {
+            } else if(row2.contains("" + lower.charAt(0))) {
                 row = row2;
             } else {
                 row = row3;
             }
-
             boolean valid = true;
-            for(int j = 0; j < Lower.length(); j++) {
-                char ch = Lower.charAt(j);
+            for(int j = 0; j < lower.length(); j++) {
+                char ch = lower.charAt(j);
 
                 if(!row.contains("" + ch)) {
                     valid = false;
                     break;
                 }
             }
-
             if(valid) {
                 ans.add(word);
             }
