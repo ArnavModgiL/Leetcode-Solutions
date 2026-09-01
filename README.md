@@ -196,5 +196,18 @@ Happy Coding! 🚀
 |  |
 | ------- |
 | [0009-palindrome-number](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0009-palindrome-number) |
+| [0202-happy-number](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0202-happy-number) |
 | [0507-perfect-number](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0507-perfect-number) |
+## Hash Table
+|  |
+| ------- |
+| [0202-happy-number](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0202-happy-number) |
+## Two Pointers
+|  |
+| ------- |
+| [0202-happy-number](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0202-happy-number) |
+## Floyd's Cycle Finding Algorithm
+|  |
+| ------- |
+| [0202-happy-number](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0202-happy-number) |
 <!---LeetCode Topics End-->
