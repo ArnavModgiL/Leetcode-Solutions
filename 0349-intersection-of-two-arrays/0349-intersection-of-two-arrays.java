@@ -1,24 +1,24 @@
 class Solution {
     public int[] intersection(int[] nums1, int[] nums2) {
-        Set<Integer> set1 = new HashSet<Integer>();
-        Set<Integer> set2 = new HashSet<Integer>();
+        HashSet<Integer> set1 = new HashSet<>();
+        HashSet<Integer> set2 = new HashSet<>();
 
         for(int x : nums1) set1.add(x);
         for(int x : nums2) set2.add(x);
 
         List<Integer> result = new ArrayList<Integer>();
 
-        for(int x : set1){
-            if(set2.contains(x)){
-                result.add(x);
+        for(int x : set1){ // loop from x too set1.length tkh . . .
+            if(set2.contains(x)){ // if set2 contains x . . 
+                result.add(x); // result main add kro.
             }
         }
 
-        int[] ans = new int[result.size()]; // Int[] mai convert honi ki liye!
+        int[] ans = new int[result.size()]; // Int Array bniye okie . . .
 
         for(int i = 0; i < result.size(); i++){
-            ans[i] = result.get(i); // result ko copy kro ans[i] mai. . .
+            ans[i] = result.get(i); // result ki sare element isme copy krdo.
         }
-        return ans;
+        return ans; // return ans krdo chlo.!
     }
 }
