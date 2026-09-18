@@ -196,6 +196,7 @@ Happy Coding! 🚀
 |  |
 | ------- |
 | [0009-palindrome-number](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0009-palindrome-number) |
+| [0050-powx-n](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0050-powx-n) |
 | [0202-happy-number](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0202-happy-number) |
 | [0507-perfect-number](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0507-perfect-number) |
 | [3870-count-commas-in-range](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/3870-count-commas-in-range) |
@@ -211,4 +212,8 @@ Happy Coding! 🚀
 |  |
 | ------- |
 | [0202-happy-number](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0202-happy-number) |
+## Recursion
+|  |
+| ------- |
+| [0050-powx-n](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0050-powx-n) |
 <!---LeetCode Topics End-->
