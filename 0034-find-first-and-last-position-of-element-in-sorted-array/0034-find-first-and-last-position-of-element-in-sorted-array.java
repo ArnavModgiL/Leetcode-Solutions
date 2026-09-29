@@ -1,36 +1,34 @@
-import java.util.*;
 class Solution {
     public int[] searchRange(int[] nums, int target) {
-        int start=0;
-        int end=nums.length-1;
-        int first=-1;
-        int last=-1;
-        while(start<=end){
-            int mid=(start+end)/2;
-            if(nums[mid]==target){
-                first=mid;
-                end=mid-1;
-            }
-            else if(nums[mid]>target){
-                end=mid-1;
-            }
-            else{
-                start=mid+1;
+        int first = -1;
+        int last = -1;
+        int left = 0;
+        int right = nums.length - 1;
+
+        while(left <= right){
+            int mid = (left + right) / 2;
+            if(nums[mid] == target){
+                first = mid;
+                right = mid - 1;
+            } else if(nums[mid] > target){
+                right = mid - 1;
+            } else {
+                left = mid + 1;
             }
         }
-        start=0;
-        end=nums.length-1;
-        while(start<=end){
-            int mid=(start+end)/2;
-            if(nums[mid]==target){
-                last=mid;
-                start=mid+1;
-            }
-            else if(nums[mid]>target){
-                end=mid-1;
-            }
-            else{
-                start=mid+1;
+
+        left = 0;
+        right = nums.length - 1;
+
+        while(left <= right){
+            int mid = (left + right) / 2;
+            if(nums[mid] == target) {
+                last = mid;
+                left = mid + 1;
+            } else if(nums[mid] > target){
+                right = mid - 1;
+            } else {
+                left = mid + 1;
             }
         }
         return new int[]{first,last};
