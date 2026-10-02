@@ -10,42 +10,43 @@
  */
 class Solution {
     public boolean isPalindrome(ListNode head) {
-    // Logic for this : Find Middle -> Reverse Second half -> Compare List -> return True/False
 
-    // Middle Find Krne ki liye!
+        if(head == null || head.next == null){ // BASE CASE...
+            return true;
+        } 
+        // FIRSTLY FIND MIDDLE FOR THIS :
+        ListNode first = head; // Pointing toward head...
+        ListNode second = head; // Pointing toward head...
 
-    ListNode first = head;
-    ListNode second = head;
-
-    while(second != null && second.next != null){
-        first = first.next;
-        second = second.next.next;
-    }
-
-    // Reverse Second half. . .
-
-    ListNode current = first;
-    ListNode last = null;
-
-    while(current != null){
-        ListNode temp = current.next;
-        current.next = last;
-        last = current;
-        current = temp;
-    }
-
-    // Compare krne liye. . .
-
-    ListNode left = head;
-    ListNode right = last;
-
-    while(right != null){
-        if(left.val != right.val){
-            return false;
+        while(second != null && second.next != null){
+            first = first.next; // first ko ikh position aaghe move kro...
+            second = second.next.next; // second ko 2 nodes aage move kar do.
         }
-        left = left.next;
-        right = right.next;
-    }
-    return true;
+
+        // REVERSE KRNI MIDDLE OF LINKEDLIST :
+
+        ListNode current = first; // current point toward head or first. . .
+        ListNode last = null; // last point toward null...
+
+        while(current != null){
+            ListNode temp = current.next;
+            current.next = last;
+            last = current;
+            current = temp;
+        }
+
+        // COMPARE KRNA ABH :
+
+        ListNode left = head;
+        ListNode right = last;
+
+        while(right != null){
+            if(left.val != right.val){
+                return false;
+            }
+            left = left.next;
+            right = right.next;
+        }
+        return true;
     }
 }
