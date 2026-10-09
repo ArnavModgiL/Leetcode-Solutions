@@ -200,6 +200,7 @@ Happy Coding! 🚀
 | [0202-happy-number](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0202-happy-number) |
 | [0507-perfect-number](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0507-perfect-number) |
 | [1342-number-of-steps-to-reduce-a-number-to-zero](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/1342-number-of-steps-to-reduce-a-number-to-zero) |
+| [2769-find-the-maximum-achievable-number](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/2769-find-the-maximum-achievable-number) |
 | [3870-count-commas-in-range](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/3870-count-commas-in-range) |
 ## Hash Table
 |  |
