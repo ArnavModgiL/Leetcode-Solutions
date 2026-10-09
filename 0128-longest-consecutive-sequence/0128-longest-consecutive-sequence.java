@@ -6,10 +6,12 @@ class Solution {
         }
         int longest = 0;
         for(int num : set){
-          
+        
+        // Agar num - 1 set mein nahi hai toh num ek consecutive sequence ka starting number hai
             if(!set.contains(num - 1)){
                 int count = 1;
-
+                
+                // Check karte rahenge ki next consecutive number (num + count) set mein present hai ya nahi
                 while(set.contains(num + count)){
                     count++;
                 }
