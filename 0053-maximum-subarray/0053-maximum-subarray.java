@@ -1,14 +1,19 @@
 class Solution {
     public int maxSubArray(int[] nums) {
-        int currSum = 0; // current array kha sum default zero liya...
-        int maxSum = Integer.MIN_VALUE; // BEz hmne sbse choti value tkh check krna hai islye..
+        int sum = 0;
+        int max = Integer.MIN_VALUE;
 
-        for(int x = 0; x < nums.length; x++){
-            // Current element se naya subarray start karna hai ya purane subarray mein current element add karke continue karna hai, dono mein se jo sum maximum hoga, use currSum mein store kar do......
-            currSum = Math.max(nums[x], currSum + nums[x]); 
-            // maxSum aur currSum mein se jo sum maximum hoga, use maxSum mein store kar do, taaki ab tak ka maximum subarray sum track hota rahe.
-            maxSum = Math.max(maxSum , currSum);
+        for(int i = 0; i < nums.length; i++){
+            sum = sum + nums[i];
+
+            if(sum > max){
+                max = sum;
+            }
+
+            if(sum < 0){
+                sum = 0;
+            }
         }
-        return maxSum;
+        return max;
     }
 }
