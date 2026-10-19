@@ -1,10 +1,9 @@
 class Solution {
     public String multiply(String num1, String num2) {
-        
         if(num1.equals("0") || num2.equals("0")){
             return "0";
-        }
 
+        }
         int n = num1.length();
         int m = num2.length();
 
@@ -17,27 +16,24 @@ class Solution {
                 int digit2 = num2.charAt(j) - '0';
 
                 int product = digit1 * digit2;
-
                 int sum = product + result[i + j + 1];
 
-                result[i + j + 1] = sum  % 10;
+                result[i + j + 1] = sum % 10;
                 result[i + j] += sum / 10;
-
             }
         }
 
-                StringBuilder sb = new StringBuilder();
+        StringBuilder sb = new StringBuilder();
 
-                int index = 0;
+        int index = 0;
 
-                while(index < result.length && result[index] == 0){
-                    index++;
-                }
-
-                while(index < result.length){
-                    sb.append(result[index]);
-                    index++;
-                }
-                return sb.toString();
-            }
+        while(index < result.length && result[index] == 0){
+            index++;
         }
+        while(index < result.length){
+            sb.append(result[index]);
+            index++;
+        }
+        return sb.toString();
+    }
+}
