@@ -197,6 +197,7 @@ Happy Coding! 🚀
 | ------- |
 | [0009-palindrome-number](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0009-palindrome-number) |
 | [0050-powx-n](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0050-powx-n) |
+| [0069-sqrtx](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0069-sqrtx) |
 | [0202-happy-number](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0202-happy-number) |
 | [0507-perfect-number](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0507-perfect-number) |
 | [1342-number-of-steps-to-reduce-a-number-to-zero](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/1342-number-of-steps-to-reduce-a-number-to-zero) |
@@ -222,4 +223,12 @@ Happy Coding! 🚀
 |  |
 | ------- |
 | [1342-number-of-steps-to-reduce-a-number-to-zero](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/1342-number-of-steps-to-reduce-a-number-to-zero) |
+## Binary Search
+|  |
+| ------- |
+| [0069-sqrtx](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0069-sqrtx) |
+## Newton's Method
+|  |
+| ------- |
+| [0069-sqrtx](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0069-sqrtx) |
 <!---LeetCode Topics End-->
