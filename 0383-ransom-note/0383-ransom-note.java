@@ -1,8 +1,6 @@
 class Solution {
     public boolean canConstruct(String ransomNote, String magazine) {
-        
-
-        HashMap<Character , Integer> map = new HashMap<>();
+        HashMap<Character, Integer> map = new HashMap<>();
 
         for(int i = 0; i < magazine.length(); i++){
             char x = magazine.charAt(i);
