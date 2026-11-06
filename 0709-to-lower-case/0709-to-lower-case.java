@@ -1,16 +1,10 @@
 class Solution {
     public String toLowerCase(String s) {
-        String answer = "";
+        StringBuilder sb = new StringBuilder();
 
         for(int i = 0; i < s.length(); i++){
-            char ch = s.charAt(i);
-
-            if(ch >= 'A' && ch <= 'Z'){
-                answer += Character.toLowerCase(ch);
-            } else {
-                answer += ch;
-            }
+            sb.append(Character.toLowerCase(s.charAt(i)));
         }
-        return answer;
+        return sb.toString();
     }
 }
