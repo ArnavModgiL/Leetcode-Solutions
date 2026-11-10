@@ -4,7 +4,7 @@ class MinStack {
     Stack<Integer> minstack = new Stack<>();
 
     public MinStack() {
-
+        
     }
     
     public void push(int value) {
@@ -13,7 +13,7 @@ class MinStack {
         if(minstack.isEmpty()){
             minstack.push(value);
         } else {
-            int mini = Math.min(value, minstack.peek());
+            int mini = Math.min(value,minstack.peek());
             minstack.push(mini);
         }
     }
