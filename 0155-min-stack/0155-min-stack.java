@@ -4,8 +4,7 @@ class MinStack {
     Stack<Integer> minstack = new Stack<>();
 
     public MinStack() {
-        stack = new Stack<>();
-        minstack = new Stack<>();
+
     }
     
     public void push(int value) {
