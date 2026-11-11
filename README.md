@@ -232,4 +232,16 @@ Happy Coding! 🚀
 |  |
 | ------- |
 | [0069-sqrtx](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/0069-sqrtx) |
+## Design
+|  |
+| ------- |
+| [1603-design-parking-system](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/1603-design-parking-system) |
+## Simulation
+|  |
+| ------- |
+| [1603-design-parking-system](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/1603-design-parking-system) |
+## Counting
+|  |
+| ------- |
+| [1603-design-parking-system](https://github.com/ArnavModgiL/Leetcode-Solutions/tree/master/1603-design-parking-system) |
 <!---LeetCode Topics End-->
