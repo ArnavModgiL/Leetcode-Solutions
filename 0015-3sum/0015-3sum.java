@@ -8,30 +8,30 @@ class Solution {
             if(i > 0 && nums[i] == nums[i - 1]){
                 continue;
             }
-            int left = i + 1;
-            int right = nums.length - 1;
+            int j = i + 1; // we need to start searching for the second element just after the current element nums[i] to form a triplet of three different indices...
+            int k = nums.length - 1;
 
-            while(left < right){
+            while(j < k){
 
-                int sum = nums[i] + nums[left] + nums[right];
+                int sum = nums[i] + nums[j] + nums[k];
 
                 if(sum == 0){
-                    ans.add(Arrays.asList(nums[i], nums[left], nums[right]));
-                    left++;
-                    right--;
+                    ans.add(Arrays.asList(nums[i], nums[j], nums[k]));
+                    j++;
+                    k--;
 
-                while(left < right && nums[left] == nums[left - 1]){
-                    left++;
+                while(j < k && nums[j] == nums[j - 1]){
+                    j++;
                 }
 
-                while(left < right && nums[right] == nums[right + 1]){
-                    right--;
+                while(j < k && nums[k] == nums[k + 1]){
+                    k--;
                 }
             }
             else if(sum < 0){
-                left++;
+                j++;
             } else {
-                right--;
+                k--;
             }
         }
         } return ans;
