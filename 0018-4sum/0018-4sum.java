@@ -19,7 +19,7 @@ class Solution {
                 int right = nums.length - 1;
 
                 while(left < right){
-                    long sum = (long) nums[i] + nums[j] + nums[left] + nums[right];
+                    long sum = (long) nums[i] + nums[j] + nums[left] + nums[right]; // Two tastCase of long type...!
 
                     if(sum == target){
                         ans.add(Arrays.asList(nums[i],nums[j],nums[left],nums[right]));
