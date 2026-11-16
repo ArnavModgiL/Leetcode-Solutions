@@ -8,7 +8,7 @@ class Solution {
 
             if(sum == target) {
                 return new int[] {left+1,right+1};
-            } else if(sum < 0) {
+            } else if(sum < target) {
                 left++;
             } else {
                 right--;
