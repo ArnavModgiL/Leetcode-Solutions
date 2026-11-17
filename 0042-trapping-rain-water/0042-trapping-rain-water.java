@@ -9,7 +9,7 @@ class Solution {
 
         int maxWater = 0;
 
-        while(left<= right){
+        while(left <= right) {
 
             if(height[left] <= height[right]){
 
@@ -18,17 +18,19 @@ class Solution {
                 } else {
                     maxWater += maxLeft - height[left];
                 }
+
                 left++;
             } else {
-
                 if(height[right] >= maxRight){
                     maxRight = height[right];
                 } else {
                     maxWater += maxRight - height[right];
                 }
+
                 right--;
             }
         }
+
         return maxWater;
     }
 }
