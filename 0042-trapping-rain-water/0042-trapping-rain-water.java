@@ -1,5 +1,6 @@
 class Solution {
     public int trap(int[] height) {
+        
         int left = 0;
         int right = height.length - 1;
 
@@ -8,25 +9,23 @@ class Solution {
 
         int maxWater = 0;
 
+        while(left<= right){
 
-        while(left < right){
-            if(height[left] < height[right]){
+            if(height[left] <= height[right]){
 
-                if(height[left] > maxLeft){
+                if(height[left] >= maxLeft){
                     maxLeft = height[left];
                 } else {
                     maxWater += maxLeft - height[left];
                 }
-
                 left++;
             } else {
 
-                if(height[right] > maxRight){
+                if(height[right] >= maxRight){
                     maxRight = height[right];
                 } else {
                     maxWater += maxRight - height[right];
                 }
-
                 right--;
             }
         }
